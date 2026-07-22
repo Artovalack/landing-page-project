@@ -139,3 +139,31 @@ a {
     position: relative;
     top: 60px;
 }
+
+
+/* Third Section */
+.third-section {
+    background-color: #0F0C1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+
+    h2, p {
+        color: #E0DAED;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 300;
+        width: 800px;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: right;
+    }
+}
