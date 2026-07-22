@@ -11,11 +11,18 @@ body {
     flex-direction: column;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* First  Section */
 .first-section {
     display: flex;
     flex-direction: column;
-    flex: 1;
     background-color: #0F0C1B;
+
     h2, p {
         color: white;
     }
@@ -23,6 +30,7 @@ body {
     h2 {
         font-size: 48px;
         font-weight: bold;
+        line-height: 60px;
     }
 
     p {
@@ -60,12 +68,13 @@ a {
 }
 
 .content {
-    height: 450px;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     position: relative;
-    top: 30px;
+    bottom: 50px;
 }
 
 .hero-text {
@@ -78,4 +87,55 @@ a {
 
 .content img {
     width: 600px;
+    min-width: 0;
+}
+
+/* Second Section */
+.second-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #161224;
+    align-items: center;
+    height: 100vh;
+
+    h2, p {
+        color: white;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 900;
+        position: relative;
+        padding-bottom: 100px;
+        top: 60px;
+    }
+
+    p {
+        width: 250px;
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50px;
+        border: 4px solid #D91E63;
+    }
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.photo-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    top: 60px;
 }
